@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+:root {
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  background: url(./images/pattern-curve.svg) no-repeat;
+  background-position: bottom left;
+  height: 100vh;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 4rem;
+  width: 580px;
+  z-index: -99;
+}
+
+header {
+  position: absolute;
+  top: 5;
+  left: 100;
+  margin-top: 2rem;
+  margin-left: 9rem;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 1rem 2rem;
+  text-align: center;
+  width: 50%;
+  z-index: 1;
+}
+
+.quotes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 5.8rem;
+  margin-left: 8rem;
+  z-index: -88;
+}
+
+.imgs {
+  width: 50%;
+}
+
+.imgs .avatar {
+  width: 450px;
+  height: 450px;
+  margin: 3.4rem auto;
+  border-radius: 5px;
+  /* box-shadow: 0 1px 30px rgba(0, 0, 0, 0.3), 0 15px 22px rgba(0, 0, 0, 0.22); */
+  box-shadow: 3px 15px 30px 0px rgba(0, 0, 0, 0.17);
+}
+
+.prev {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.next {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.icons {
+  height: 50px;
+  padding: 0 1rem;
+  border-radius: 40px 40px 40px 40px;
+  background-color: white;
+  position: absolute;
+  bottom: 2.5rem;
+  right: 27rem;
+}
+
+.content p {
+  font-weight: 300;
+  color: var(--Dark-Blue);
+  text-align: left;
+  right: 0;
+  margin-right: -5rem;
+}
+
+.content h3 {
+  font-weight: 500;
+  font-size: 17px;
+  text-align: left;
+  padding-top: 2rem;
+  color: var(--Grayish-Blue);
+}
+
+.content h3 span {
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--Dark-Blue);
+}
+
+@media (max-width: 375px) {
+  body {
+    background: url(./images/pattern-curve.svg) no-repeat;
+    background-position: left bottom;
+    height: 100%;
+  }
+
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 2rem 3.5rem;
+    width: 380px;
+    z-index: -99;
+  }
+
+  header {
+    position: absolute;
+    margin: 0 auto;
+  }
+
+  .slider {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    margin: 10rem 0 0 2.3rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .quotes {
+    width: 90px;
+    height: 90px;
+    top: 30%;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    z-index: -88;
+  }
+
+  .imgs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .imgs .avatar {
+    width: 300px;
+    height: 300px;
+    margin: 4.2rem 5rem;
+  }
+
+  .icons {
+    bottom: 3rem;
+    right: 6rem;
+  }
+
+  .content p {
+    top: 70%;
+    font-weight: 300;
+    color: var(--Dark-Blue);
+    text-align: center;
+    margin: 19rem 0 0 2rem;
+    padding-top: 3rem;
+    font-size: 24px;
+  }
+
+  .content h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--Grayish-Blue);
+  }
+
+  .content h3 span {
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--Dark-Blue);
+  }
+}
